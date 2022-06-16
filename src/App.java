@@ -26,17 +26,15 @@ public class App {
         String phrase = args[1];
 
         switch (animal) {
-            case COW:
+            case COW -> {
                 Cow cow = new Cow(phrase);
                 print(cow.say());
-                break;
-            case PIKACHU:
+            }
+            case PIKACHU -> {
                 Pikachu pikachu = new Pikachu(phrase);
                 print(pikachu.say());
-                break;
-            default:
-                print("Sorry, Animal not implemented yet.");
-                break;
+            }
+            default -> print("Sorry, Animal not implemented yet.");
         }
 
         System.exit(0);
