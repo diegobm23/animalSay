@@ -41,7 +41,7 @@ public class DialogUtils {
     }
 
     private static String createLine(String simbol, int lenght) {
-        return " " + new String(new char[lenght + 2]).replace("\0", simbol);
+        return " " + new String(new char[lenght]).replace("\0", simbol);
     }
 
 }
