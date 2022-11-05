@@ -18,6 +18,6 @@ java -jar animalSay.jar "cow" "Hello GitHub!"
 
 Featuring animals:
 
-Cow
-Cat
-Pikachu
+- Cow
+- Cat
+- Pikachu
