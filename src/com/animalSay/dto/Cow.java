@@ -1,3 +1,7 @@
+package com.animalSay.dto;
+
+import com.animalSay.utils.DialogUtils;
+
 public class Cow extends Animal {
 
     private static final String IMAGE = "        \\   ^__^              \n"

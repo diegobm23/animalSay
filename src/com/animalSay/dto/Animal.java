@@ -1,3 +1,5 @@
+package com.animalSay.dto;
+
 public class Animal {
 
     private String phrase;

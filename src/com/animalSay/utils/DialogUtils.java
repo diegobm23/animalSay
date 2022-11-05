@@ -1,3 +1,5 @@
+package com.animalSay.utils;
+
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.text.WordUtils;
 
@@ -10,7 +12,7 @@ public class DialogUtils {
         String phraseWrap = WordUtils.wrap(phrase, 40);
         String[] phraseLines = phraseWrap.split("\n");
 
-        int lineLenght = phraseLines[0].length();
+        int lineLenght = searchLongerLine(phraseLines);
         String lineTop = createLine("_", lineLenght);
         String lineBotton = createLine("-", lineLenght);
 
@@ -44,4 +46,15 @@ public class DialogUtils {
         return " " + new String(new char[lenght]).replace("\0", simbol);
     }
 
+    private static int searchLongerLine(String[] phraseLines) {
+        int lineLength = 0;
+
+        for (int i = 0; i < phraseLines.length; i++) {
+            if (phraseLines[i].length() > lineLength) {
+                lineLength = phraseLines[i].length();
+            }
+        }
+
+        return lineLength;
+    }
 }

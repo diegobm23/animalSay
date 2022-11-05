@@ -1,3 +1,8 @@
+package com.animalSay;
+
+import com.animalSay.dto.Cow;
+import com.animalSay.dto.Pikachu;
+
 public class App {
 
     public static final String COW = "cow";
