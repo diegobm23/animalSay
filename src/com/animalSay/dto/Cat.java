@@ -2,7 +2,7 @@ package com.animalSay.dto;
 
 import com.animalSay.utils.DialogUtils;
 
-public class Cat extends Animal{
+public class Cat extends Animal {
 
     private static final String IMAGE = "   \\\n"
             +"    \\\n"

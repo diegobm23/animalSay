@@ -18,7 +18,8 @@ public class App {
         String help = "You need to pass two arguments: \n" +
                 "animalSay [animal] [message] \n\n" +
                 "Example: \n" +
-                "animalSay \"cow\" \"Hello World!\"";
+                "animalSay \"cow\" \"Hello World!\"\n" +
+                "animalSay \"cat\" \"Meow meow, pet me now human slave... meow meow\"";
 
         print(help);
         System.exit(1);
