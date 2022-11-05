@@ -1,5 +1,6 @@
 package com.animalSay;
 
+import com.animalSay.dto.Cat;
 import com.animalSay.dto.Cow;
 import com.animalSay.dto.Pikachu;
 
@@ -7,6 +8,7 @@ public class App {
 
     public static final String COW = "cow";
     public static final String PIKACHU = "pikachu";
+    public static final String CAT = "cat";
 
     public static void print(String message) {
         System.out.print(message);
@@ -39,6 +41,11 @@ public class App {
             case PIKACHU: {
                 Pikachu pikachu = new Pikachu(phrase);
                 print(pikachu.say());
+                break;
+            }
+            case CAT: {
+                Cat cat = new Cat(phrase);
+                print(cat.say());
                 break;
             }
             default: {
