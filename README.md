@@ -15,3 +15,9 @@ java -jar animalSay.jar "cow" "Hello GitHub!"
 ```
 
 ![cowsay](https://user-images.githubusercontent.com/7649862/176426669-3add0dad-c6cf-45c3-816b-1e7224108a42.png)
+
+Featuring animals:
+
+Cow
+Cat
+Pikachu
