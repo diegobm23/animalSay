@@ -1,4 +1,4 @@
-package com.animalSay.utils;
+package com.animalsay.utils;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.text.WordUtils;
@@ -49,9 +49,9 @@ public class DialogUtils {
     private static int searchLongerLine(String[] phraseLines) {
         int lineLength = 0;
 
-        for (int i = 0; i < phraseLines.length; i++) {
-            if (phraseLines[i].length() > lineLength) {
-                lineLength = phraseLines[i].length();
+        for (String phraseLine : phraseLines) {
+            if (phraseLine.length() > lineLength) {
+                lineLength = phraseLine.length();
             }
         }
 

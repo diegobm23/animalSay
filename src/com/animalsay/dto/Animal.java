@@ -1,8 +1,11 @@
-package com.animalSay.dto;
+package com.animalsay.dto;
 
 public class Animal {
 
     private String phrase;
+
+    public Animal() {
+    }
 
     public Animal(String phrase) {
         this.phrase = phrase;

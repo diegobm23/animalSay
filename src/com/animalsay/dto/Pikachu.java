@@ -1,8 +1,9 @@
-package com.animalSay.dto;
+package com.animalsay.dto;
 
-import com.animalSay.utils.DialogUtils;
+import com.animalsay.interfaces.AnimalInterface;
+import com.animalsay.utils.DialogUtils;
 
-public class Pikachu extends Animal {
+public class Pikachu extends Animal implements AnimalInterface {
 
     private static final String IMAGE = "   \\ \n"
             + "    \\ \n"
@@ -19,6 +20,9 @@ public class Pikachu extends Animal {
             +"           >   \\    / \n"
             +"          (_,-'`> .' \n"
             +"               (_,'' \n";
+
+    public Pikachu() {
+    }
 
     public Pikachu(String phrase) {
         super(phrase);

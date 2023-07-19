@@ -1,14 +1,18 @@
-package com.animalSay.dto;
+package com.animalsay.dto;
 
-import com.animalSay.utils.DialogUtils;
+import com.animalsay.interfaces.AnimalInterface;
+import com.animalsay.utils.DialogUtils;
 
-public class Cow extends Animal {
+public class Cow extends Animal implements AnimalInterface {
 
     private static final String IMAGE = "        \\   ^__^              \n"
             + "         \\  (oo)\\_______     \n"
             + "            (__)\\       )\\/\\\n"
             + "                ||----w |      \n"
             + "                ||     ||      \n";
+
+    public Cow() {
+    }
 
     public Cow(String phrase) {
         super(phrase);
